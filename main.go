@@ -27,6 +27,5 @@ func main() {
     var res map[string]interface{}
 
     json.NewDecoder(resp.Body).Decode(&res)
-
     fmt.Println(res["json"])
 }
